@@ -1,0 +1,2 @@
+def square_or_square_root(arr):
+    return [digit**0.5 if digit**0.5==int(digit**0.5) else digit**2 for digit in arr]

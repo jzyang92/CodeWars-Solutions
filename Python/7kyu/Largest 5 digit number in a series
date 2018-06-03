@@ -1,0 +1,5 @@
+def solution(digits):
+    fdig =[]
+    for i,j in enumerate(digits):
+        fdig.append(digits[i:i+5])
+    return int(max(fdig))

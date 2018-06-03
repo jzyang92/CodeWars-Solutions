@@ -1,0 +1,2 @@
+def accum(s):
+    return '-'.join(((c+1)*i).capitalize() for c,i in enumerate(s))

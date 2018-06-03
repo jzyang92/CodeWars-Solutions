@@ -1,0 +1,5 @@
+def sum_array(arr):
+    if arr:
+        return sum(sorted(arr)[1:-1]) 
+    else:
+        return 0

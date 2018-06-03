@@ -1,0 +1,4 @@
+import operator
+opsto = { "+": operator.add, "-": operator.sub, "*": operator.mul, "/": operator.truediv}
+def basic_op(operator, value1, value2):
+    return opsto[operator](value1,value2)

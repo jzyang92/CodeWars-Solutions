@@ -1,0 +1,12 @@
+def count_positives_sum_negatives(arr):
+    cntpstv = 0
+    cntngtv = 0
+    if arr:
+        for i in arr:
+            if i>0:
+                cntpstv += 1
+            elif i<0:
+                cntngtv += i
+        return [cntpstv, cntngtv]
+    else:
+        return []

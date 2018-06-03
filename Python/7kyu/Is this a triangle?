@@ -1,0 +1,3 @@
+def is_triangle(a, b, c):
+    sort = sorted([a,b,c])
+    return sort[0]+sort[1] > sort[2]

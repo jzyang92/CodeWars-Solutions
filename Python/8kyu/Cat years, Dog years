@@ -1,0 +1,12 @@
+def human_years_cat_years_dog_years(human_years):
+    xtra = (human_years - 2)
+    if human_years == 1:
+        cy = 15
+        dy = 15
+    if human_years == 2:
+        cy = 24
+        dy = 24
+    if human_years > 2:
+        cy = 24 + xtra * 4
+        dy = 24 + xtra * 5
+    return [human_years,cy,dy]

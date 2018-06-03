@@ -1,0 +1,7 @@
+def series_sum(n):
+    den = 1
+    sum = 0
+    for i in range(n):
+        sum += 1/den
+        den += 3
+    return '{:.2f}'.format(sum)

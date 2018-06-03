@@ -1,0 +1,16 @@
+import math
+class Fighter(object):
+    def __init__(self, name, health, damage_per_attack):
+        self.name = name
+        self.health = health
+        self.damage_per_attack = damage_per_attack
+        
+def declare_winner(fighter1, fighter2, first_attacker):
+    turnsf1d = math.ceil(fighter1.health/fighter2.damage_per_attack)
+    turnsf2d = math.ceil(fighter2.health/fighter1.damage_per_attack)
+    if turnsf1d > turnsf2d:
+        return fighter1.name
+    if turnsf2d > turnsf1d:
+        return fighter2.name
+    else:
+        return first_attacker
