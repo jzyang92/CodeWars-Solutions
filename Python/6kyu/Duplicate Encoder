@@ -1,0 +1,3 @@
+def duplicate_encode(word):
+    l = word.lower()
+    return ''.join('(' if l.count(c) == 1 else ')'  for c in l)
