@@ -1,0 +1,6 @@
+def dig_pow(n, p):
+    digits = list(map(int, str(n)))
+    sum = 0
+    for i,j in enumerate(digits):
+        sum += j**(p+i)
+    return sum/n if sum % n == 0 else -1
