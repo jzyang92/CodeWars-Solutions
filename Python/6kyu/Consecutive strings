@@ -1,0 +1,12 @@
+def longest_consec(strarr, k):
+    if strarr == [] or k<1 or k>len(strarr):
+        return ""
+        
+    else:
+        newlist = []
+        start=0
+        while len(strarr)>=k:
+            newlist.append(''.join(strarr[start:k]))
+            start+=1
+            k+=1
+        return max(newlist, key = len)
