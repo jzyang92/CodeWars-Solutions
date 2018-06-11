@@ -1,0 +1,21 @@
+def decrypt(encrypted_text, n):
+    if n <= 0:
+      return encrypted_text
+    else:
+      end = encrypted_text[-1]
+      for i in range(n):
+            even = list(encrypted_text[:len(encrypted_text)//2])
+            odd = list(encrypted_text[len(encrypted_text)//2:])
+            encrypted_text = sum(map(list, zip(odd, even)), [])
+            if len(odd) > len(even):
+                encrypted_text += end
+      return ''.join(encrypted_text)
+
+
+def encrypt(text, n):
+    if n <= 0:
+        return text
+    else:
+        for i in range(n):
+            text = text[1::2]+text[::2]
+        return text
