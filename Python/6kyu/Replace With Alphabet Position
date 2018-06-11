@@ -1,0 +1,7 @@
+import string
+def alphabet_position(text):
+    num = []
+    for i in text.lower():
+        if i.isalpha():
+            num.append(string.ascii_lowercase.index(i)+1)
+    return ' '.join(map(str, num))
