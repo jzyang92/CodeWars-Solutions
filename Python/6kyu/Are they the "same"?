@@ -1,0 +1,8 @@
+def comp(array1, array2):
+    if array1 ==[] and array2 ==[]:
+        return True
+    elif array1 and array2:
+        array1 = [i**2 for i in sorted(array1)]
+        return array1 == sorted(array2)
+    else:
+        return False
